@@ -1,127 +1,69 @@
-# Proyecto de Gestión de Inventarios
+# Proyecto de Blog Personal
 
-Este proyecto es un sistema de gestión de inventarios desarrollado para la Universidad Técnica de Ambato. El sistema optimiza la administración de bienes tecnológicos y mobiliarios, proporcionando una solución eficiente y precisa para el seguimiento y control de inventarios.
+Este proyecto es un blog personal desarrollado para compartir artículos, noticias y reflexiones sobre temas de interés. Cuenta con funcionalidades para crear, editar y eliminar publicaciones, gestionar categorías y comentarios, y ofrecer una experiencia de lectura amigable y atractiva para los usuarios.
 
 ## Comenzando 🚀
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Mira **Despliegue** para conocer cómo desplegar el proyecto.
-
 ### Pre-requisitos 📋
 
-Qué cosas necesitas para instalar el software y cómo instalarlas:
-
-Node.js
-Angular CLI
-MySQL
-Git
-
+- Servidor web con PHP 7 o superior  
+- Base de datos MySQL o MariaDB  
+- Navegador web moderno  
 
 ### Instalación 🔧
 
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo en funcionamiento:
-
 1. Clona el repositorio:
 
-git clone
+    git clone 
 
+2. Crea la base de datos:
 
-2. Instala las dependencias del backend:
+    CREATE DATABASE blog_personal;
 
-cd backend
-npm install
+3. Importa la estructura y datos iniciales:
 
+    mysql -u tu_usuario -p blog_personal < database/schema.sql
 
-3. Configura la base de datos MySQL:
+4. Configura las variables de entorno o archivo de configuración con los datos de conexión a la base de datos.
 
+5. Copia los archivos al directorio raíz del servidor web (ejemplo: htdocs en XAMPP).
 
-CREATE DATABASE inventarios;
+6. Abre en el navegador:
 
+    http://localhost/blog/
 
-4. Configura las variables de entorno del backend:
+## Uso básico 🖥️
 
-Crea un archivo `.env` en el directorio del backend con las configuraciones de tu base de datos.
-
-5. Inicia el servidor del backend:
-
-npm start
-
-
-6. Instala las dependencias del frontend:
-
-cd frontend
-npm install
-
-
-7. Inicia la aplicación Angular:
-
-ng serve
-
-
-Finaliza con un ejemplo de cómo obtener datos del sistema o cómo usarlos para una pequeña demo:
-
-Accede a http://localhost:4200 y usa las credenciales predeterminadas para iniciar sesión.
-
-
-## Ejecutando las pruebas ⚙️
-
-Explica cómo ejecutar las pruebas automatizadas para este sistema:
-
-### Pruebas end-to-end 🔩
-
-Explica qué verifican estas pruebas y por qué:
-
-ng e2e
-
-
-### Pruebas de estilo de codificación ⌨️
-
-Explica qué verifican estas pruebas y por qué:
-
+- Crea, edita y elimina publicaciones del blog.  
+- Gestiona categorías y comentarios.  
+- Navega por los artículos y disfruta de la lectura.
 
 ## Despliegue 📦
 
-Agrega notas adicionales sobre cómo hacer deploy:
+1. Configura un servidor con PHP y MySQL.  
+2. Copia los archivos al servidor.  
+3. Importa la base de datos.  
+4. Configura el archivo de conexión.  
+5. Accede mediante la URL pública.
 
-1. Construye el proyecto para producción:
+## Tecnologías usadas 🛠️
 
-
-2. Sube los archivos generados a tu servidor web.
-
-## Construido con 🛠️
-
-Menciona las herramientas que utilizaste para crear tu proyecto:
-
-* [Angular](https://angular.io/) - Framework de frontend
-* [Node.js](https://nodejs.org/) - Entorno de ejecución para JavaScript
-* [MySQL](https://www.mysql.com/) - Base de datos relacional
-* [PrimeNG](https://www.primefaces.org/primeng/) - Biblioteca de componentes de UI
+- PHP  
+- MySQL  
+- CSS
 
 ## Contribuyendo 🖇️
 
-Por favor, lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más sobre cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki).
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+Lee el archivo [CONTRIBUTING.md](CONTRIBUTING.md) para más detalles sobre cómo contribuir.
 
 ## Autores ✒️
-
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios:
-
+* **Colaborador(a)** - [Angel Caiza](#nombreusuario)
 * **Colaborador(a)** - [David Flores](#nombreusuario)
 * **Colaborador(a)** - [Diego Pincha](#nombreusuario)
-* **Colaborador(a)** - [Angel Caiza](#nombreusuario)
 * **Colaborador(a)** - [Axel Vargas](#nombreusuario)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/tu/proyecto/contributors) quienes han participado en este proyecto.
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
-
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
